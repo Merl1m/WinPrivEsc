@@ -1,0 +1,14 @@
+// System Information
+sysinfo
+
+
+// Attempt to get priv esc in an automated way
+getsystem
+
+
+// Getting suggestions on vulns on target
+run post/multi/recon/local_exploit_suggester
+
+
+// Get privileges of current users
+getprivs

